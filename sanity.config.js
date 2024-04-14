@@ -1,7 +1,6 @@
 // sanity.config.js
 import {defineConfig} from 'sanity';
 import {structureTool} from 'sanity/structure';
-import {deskTool} from 'sanity/desk';
 import schemas from './schemas/schema';
 import {internationalizedArray} from 'sanity-plugin-internationalized-array';
 import {documentInternationalization} from '@sanity/document-internationalization';
@@ -15,7 +14,6 @@ export default defineConfig({
     dataset: 'production',
     plugins: [
         structureTool(),
-        deskTool(),
         visionTool(),
         documentInternationalization({
             // Required configuration
